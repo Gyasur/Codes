@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class AgeCheck {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("please enter the age");
+        int age = sc.nextInt();
+
+        if (age < 0){
+            System.out.println("Invalid age entered");
+        } else if (age >0 && age <= 12) {
+            System.out.println("Child");
+        } else if (age < 18) {
+            System.out.println("Teenage");
+        } else {
+            System.out.println("Adult");
+        }
+    }
+}
+
